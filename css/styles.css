@@ -648,8 +648,7 @@ img {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
 }
-.costum-checkbox-icon {
-}
+
 :checked + .label-user-privacy .costum-checkbox {
   background-color: #404bbf;
   border: none;
