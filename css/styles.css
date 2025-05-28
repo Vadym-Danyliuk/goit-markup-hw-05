@@ -532,8 +532,8 @@ img {
   fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.close-modal-fill:hover,
-.close-modal-fill:focus {
+.close-modal:hover .close-modal-fill,
+.close-modal:focus .close-modal-fill {
   fill: #ffffff;
 }
 
@@ -597,6 +597,7 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
   background-color: transparent;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -634,7 +635,7 @@ img {
 .label-user-privacy {
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.5;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
@@ -645,22 +646,28 @@ img {
   width: 16px;
   height: 16px;
   fill: transparent;
+  stroke: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 :checked + .label-user-privacy .costum-checkbox {
   background-color: #404bbf;
   border: none;
-}
-
-:checked + .label-user-privacy .costum-checkbox-icon {
   fill: #f4f4fd;
 }
 
 .modal-checkbox-link {
   text-decoration: underline;
   color: #4d5ae5;
+}
+.modal-btn {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
 }
 
 /* /Modal */
