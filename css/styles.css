@@ -631,6 +631,34 @@ img {
   line-height: 117%;
   letter-spacing: 0.04em;
 }
+.label-user-privacy {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+.costum-checkbox {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  fill: transparent;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+}
+.costum-checkbox-icon {
+}
+:checked + .label-user-privacy .costum-checkbox {
+  background-color: #404bbf;
+  border: none;
+}
+
+:checked + .label-user-privacy .costum-checkbox-icon {
+  fill: #f4f4fd;
+}
+
 .modal-checkbox-link {
   text-decoration: underline;
   color: #4d5ae5;

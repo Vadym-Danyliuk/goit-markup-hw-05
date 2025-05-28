@@ -677,21 +677,26 @@
           <div class="modal-checkbox-wrapper">
             <input
               id="user-privacy"
-              class="modal-checkbox"
+              class="visually-hidden"
               type="checkbox"
               value="true"
               name="user-privacy"
             />
-            <p class="modal-checkbox-text">
+            <label class="label-user-privacy" for="user-privacy">
+              <span class="costum-checkbox">
+                <svg class="costum-checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
               I accept the terms and conditions of the
               <a
                 class="modal-checkbox-link"
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer"
-                >Privacy Policy</a
-              >
-            </p>
+                >Privacy Policy
+              </a>
+            </label>
           </div>
           <button class="servis-btn modal-btn" type="submit">Send</button>
         </form>
